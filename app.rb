@@ -10,7 +10,7 @@ get("/square/new") do
 end
 
 get("/square/results") do
-  @num = params["number"].to_i
+  @num = params["number"].to_f
 
   @square = @num**2
 
@@ -22,7 +22,7 @@ get("/square_root/new") do
 end
 
 get("/square_root/results") do
-  @user_num = params["user_number"].to_i
+  @user_num = params["user_number"].to_f
 
   @sqrt = Math.sqrt(@user_num)
 
